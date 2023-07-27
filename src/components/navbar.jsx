@@ -29,7 +29,7 @@ const Navbar = () => {
             className={`font-montserrat font-normal cursor-pointer text-[16px] text-white ${
               idx === navigationLinks.length - 1 ? "mr-0" : "mr-10"
             }
-            ${active == nav.id ? "text-white" : "text-lightWhite"}
+            ${active === nav.id ? "text-white" : "text-lightWhite"}
             hover:text-white transition-all duration-500
             `}
             onClick={() => activeHandler(nav.id)}
@@ -60,7 +60,7 @@ const Navbar = () => {
                 className={`font-montserrat font-normal cursor-pointer text-[16px] text-white ${
                   idx === navigationLinks.length - 1 ? "mr-0" : "mr-10"
                 }
-              ${active == nav.id ? "text-white" : "text-lightWhite"}
+              ${active === nav.id ? "text-white" : "text-lightWhite"}
               hover:text-white transition-all duration-500
               `}
                 onClick={() => activeHandler(nav.id)}

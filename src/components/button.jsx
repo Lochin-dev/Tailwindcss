@@ -2,7 +2,7 @@ const Button = ({ styles }) => {
   return (
     <button
       type="button"
-      className={`py-4 px-6 font-montserrat font-medium text-[18px] button-gradient rounded-[10px] outline-none ${styles}`}
+      className={`py-3 px-5 font-montserrat font-semibold text-[18px] button-gradient rounded-[10px] text-slate-200 outline-none ${styles}`}
     >
       Boshlash
     </button>
