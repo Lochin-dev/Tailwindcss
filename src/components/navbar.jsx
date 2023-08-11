@@ -14,11 +14,13 @@ const Navbar = () => {
     <div className={`w-full flex  ${styles.flexBetween}`}>
       {/* Logo */}
       <div className={`${styles.heading}`}>
-        <img
-          src={`${logo}`}
-          alt="logotip"
-          className="w-[150px] h-[55px] cursor-pointer"
-        />
+        <a href="/">
+          <img
+            src={`${logo}`}
+            alt="logotip"
+            className="w-[150px] h-[55px] cursor-pointer"
+          />
+        </a>
       </div>
 
       {/* Navigation link */}
@@ -26,7 +28,7 @@ const Navbar = () => {
         {navigationLinks.map((nav, idx) => (
           <li
             key={idx}
-            className={`font-montserrat font-normal cursor-pointer text-[16px] text-white ${
+            className={`font-montserrat font-normal cursor-pointer text-[16px] ${
               idx === navigationLinks.length - 1 ? "mr-0" : "mr-10"
             }
             ${active === nav.id ? "text-white" : "text-lightWhite"}
@@ -34,13 +36,13 @@ const Navbar = () => {
             `}
             onClick={() => activeHandler(nav.id)}
           >
-            {nav.title}
+            <a href={`#${nav.id}`}> {nav.title}</a>
           </li>
         ))}
       </ul>
 
       {/* Navigation btn */}
-      <div className={`sm:hidden flex flex-1 justify-end items-center`}>
+      <div className={`sm:hidden flex flex-1 justify-end items-center z-50`}>
         <img
           src={toggleNav ? closee : menu}
           alt="menu"
@@ -57,7 +59,7 @@ const Navbar = () => {
             {navigationLinks.map((nav, idx) => (
               <li
                 key={idx}
-                className={`font-montserrat font-normal cursor-pointer text-[16px] text-white ${
+                className={`font-montserrat font-normal cursor-pointer text-[16px]  ${
                   idx === navigationLinks.length - 1 ? "mr-0" : "mr-10"
                 }
               ${active === nav.id ? "text-white" : "text-lightWhite"}
@@ -65,7 +67,7 @@ const Navbar = () => {
               `}
                 onClick={() => activeHandler(nav.id)}
               >
-                {nav.title}
+                <a href={`#${nav.id}`}> {nav.title}</a>
               </li>
             ))}
           </ul>

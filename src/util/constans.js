@@ -1,14 +1,9 @@
 import { star, shield, send, airbnb, binance, dropbox, coinbase } from '../assets/index'
-import { AiFillStar } from "react-icons/ai";
 import {
-    BsFillSendFill,
-    BsShieldFillCheck,
-    BsDropbox,
     BsInstagram,
 } from "react-icons/bs";
-import { FaAirbnb, FaFacebookF } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
 import { FiLinkedin, FiTwitter } from "react-icons/fi";
-import { TbBrandBinance, TbBrandCoinbase } from "react-icons/tb";
 
 export const navigationLinks = [
     {
@@ -16,12 +11,12 @@ export const navigationLinks = [
         title: 'Bosh sahifa'
     },
     {
-        id: 'features',
-        title: 'Xizmatlar'
-    },
-    {
         id: 'praduct',
         title: 'Maxsulot'
+    },
+    {
+        id: 'features',
+        title: 'Xizmatlar'
     },
     {
         id: 'cliens',

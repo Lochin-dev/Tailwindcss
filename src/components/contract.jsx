@@ -3,7 +3,7 @@ import { layout, styles } from "../util/style";
 import Button from "./button";
 const Contract = () => {
   return (
-    <section className={layout.section}>
+    <section id="praduct" className={layout.section}>
       <div className={layout.sectionInfo}>
         <h2 className={styles.heading2}>
           Bir necha oson qadamda <br className="sm:block hidden" /> kantrakt

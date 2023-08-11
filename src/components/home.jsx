@@ -7,10 +7,10 @@ export default function Home() {
   return (
     <section
       id="home"
-      className={`flex md:flex-row flex-col ${styles.paddingY}`}
+      className={`flex md:flex-row flex-col ${styles.paddingY} `}
     >
       {/* Animation image */}
-      <div className={`flex-1 ${styles.flexCenter} md:my-0 my-[72.5px]  `}>
+      <div className={`flex-1 ${styles.flexCenter} md:my-0 my-[10.5px]  `}>
         <img
           src={home}
           alt="robt"
@@ -20,7 +20,7 @@ export default function Home() {
 
       {/* Information */}
       <div
-        className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 relative`}
+        className={`flex-1 ${styles.flexStart} flex-col  md:px-16 px-0 relative`}
       >
         {/* Discount infotmation */}
         <div

@@ -15,12 +15,13 @@ const App = () => {
       {/* Nome */}
       <div className={`bg-secondary ${styles.flexStart}`}>
         <div className={`${styles.container}`}>
-          < Home />
+
         </div>
       </div>
 
       <div className={`bg-secondary  ${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.container}`}>
+          < Home />
           <Statistics />
           <Contract />
           <Billing />
